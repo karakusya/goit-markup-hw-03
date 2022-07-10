@@ -26,7 +26,6 @@ header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 25px 215px;
   display: flex;
   justify-content: space-between;
 }
@@ -36,6 +35,8 @@ header {
   font-size: 26px;
   line-height: 1.19;
   color: var(--brand-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .logo-black {
@@ -45,6 +46,10 @@ header {
   color: var(--white-color);
 }
 
+.nav-list {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
 .nav-link {
   color: var(--black-color);
 }
@@ -59,9 +64,10 @@ header {
 
 .hero {
   background: var(--background);
-  width: 1600px;
   height: 600px;
-  padding: 200px 452px;
+  width: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .hero-title {
   text-align: center;
@@ -212,4 +218,10 @@ address {
   width: 307px;
   display: flex;
   justify-content: space-between;
+}
+
+.container{
+  width: 1200px;
+  padding-right: 215px;
+  padding-left: 215px;
 }
