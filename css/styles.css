@@ -160,6 +160,7 @@ header {
 }
 .team-name {
   margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--black-color);
 
   font-weight: 500;
@@ -168,13 +169,15 @@ header {
 }
 
 .team-role {
-  margin-top: 10px;
+
   font-size: 16px;
   line-height: 1.18;
 }
 
 .footer {
   background: var(--background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address-link {
@@ -188,13 +191,12 @@ header {
 
 .filter-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
   gap: 8px;
-  padding-bottom: 16px;
+  margin-bottom: 34px;
 }
 .project-list {
-  margin-top: 34px;
+
 }
 .card-set {
   display: flex;
@@ -223,6 +225,7 @@ header {
 }
 
 .project-title {
+  margin-bottom: 4px;
   color: var(--black-color);
 
   font-weight: 700;
@@ -231,7 +234,7 @@ header {
   letter-spacing: 0.06em;
 }
 .project-type {
-  margin-top: 4px;
+ 
   font-size: 16px;
   line-height: 1.87;
 }
@@ -253,11 +256,7 @@ address {
   width: calc((100%-90px)/4);
 }
 
-.activity-list {
-  display: flex;
-  gap: 30px;
-  margin: 50px auto 0 auto;
-}
+
 
 .team {
   background-color: var(--white-bgrnd);
@@ -308,8 +307,7 @@ address {
   padding-top: 32px;
 }
 .footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+
 }
 
 .address-list {
@@ -332,4 +330,7 @@ address {
 }
 .team-item {
   width: calc((100%-90px)/4);
+}
+.project-item{
+  width: ((100%-90px)/3);
 }
