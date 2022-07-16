@@ -52,8 +52,6 @@ header {
 }
 .logo {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   color: var(--brand-color);
 
@@ -83,7 +81,6 @@ header {
 }
 
 .hero {
-  width: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background: var(--background);
@@ -96,13 +93,14 @@ header {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .order-btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+ 
 
   color: var(--white-color);
 
@@ -123,7 +121,7 @@ header {
 }
 
 .hidden-title {
-  display: none;
+  visibility: hidden;
 }
 
 .characteristic-title {
@@ -131,14 +129,13 @@ header {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.characteristic-text {
-  margin-top: 10px;
-}
 
-.activity-title {
-  margin-top: -94px;
+
+.section.activity {
+  padding-top: 0;
 }
 
 .section-title {
@@ -147,6 +144,7 @@ header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 50px;
 }
 .team-item {
   display: flex;
@@ -202,7 +200,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0;
 }
 
 .filter-btn {
@@ -241,6 +238,7 @@ header {
 
 address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .map-address {
@@ -252,7 +250,7 @@ address {
   gap: 30px;
 }
 .characteristic-item {
-  width: 270px;
+  width: calc((100%-90px)/4);
 }
 
 .activity-list {
@@ -290,15 +288,14 @@ address {
 
 .container {
   width: 1200px;
-  padding: 94px 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 .nav-link {
   display: block;
@@ -324,4 +321,15 @@ address {
   background: var(--white-color);
   border: 1px solid var(--portfolio-border);
   padding: 20px 24px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.activity-item {
+  width: calc((100%-60px)/3);
+}
+.team-item {
+  width: calc((100%-90px)/4);
 }
