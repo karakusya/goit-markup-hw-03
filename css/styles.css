@@ -121,7 +121,16 @@ header {
 }
 
 .hidden-title {
-  visibility: hidden;
+  position: absolute; 
+  width: 1px; 
+  height: 1px; 
+  margin: -1px; 
+  border: 0; 
+  padding: 0; 
+  white-space: nowrap; 
+  clip-path: inset(100%); 
+  clip: rect(0 0 0 0); 
+  overflow: hidden;
 }
 
 .characteristic-title {
@@ -146,11 +155,15 @@ header {
   line-height: 1.17;
   margin-bottom: 50px;
 }
+
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 30px;
+  width: calc((100% - 90px) / 4);
+  text-align: center;
 
   background-color: var(--white-color);
 
@@ -159,7 +172,7 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 .team-name {
-  margin-top: 30px;
+
   margin-bottom: 10px;
   color: var(--black-color);
 
@@ -184,20 +197,14 @@ header {
   color: var(--transp-white);
 }
 
-.project-container {
-  display: flex;
-  flex-direction: column;
-}
 
 .filter-list {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
-.project-list {
 
-}
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -239,21 +246,21 @@ header {
   line-height: 1.87;
 }
 
+.logo-footer {
+  margin-bottom: 20px;
+}
+
 address {
   font-style: normal;
-  margin-top: 20px;
 }
 
 .map-address {
   color: var(--white-color);
 }
 
-.characteristic-list {
-  display: flex;
-  gap: 30px;
-}
+
 .characteristic-item {
-  width: calc((100%-90px)/4);
+  width: calc((100% - 90px) / 4);
 }
 
 
@@ -263,9 +270,7 @@ address {
 }
 
 .team-list {
-  display: flex;
   margin-top: 50px;
-  gap: 30px;
 }
 
 .nav-list {
@@ -306,9 +311,7 @@ address {
   padding-bottom: 32px;
   padding-top: 32px;
 }
-.footer-container {
 
-}
 
 .address-list {
   display: flex;
@@ -326,11 +329,13 @@ address {
   padding-bottom: 94px;
 }
 .activity-item {
-  width: calc((100%-60px)/3);
+  width: calc((100% - 60px) / 3);
 }
-.team-item {
-  width: calc((100%-90px)/4);
-}
+
 .project-item{
-  width: ((100%-90px)/3);
+  width: ((100% - 90px) / 3);
+}
+
+.card-item {
+  flex-basis: calc((100% - 90px) / 3) ;
 }
